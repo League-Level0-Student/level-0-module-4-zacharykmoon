@@ -26,17 +26,25 @@ public class SleepyHead {
 		
 		// If it is the weekend, tell the user they get to sleep in.
 		if(isWeekend == true) {
-			JOptionPane.showMessageDialog(null, "you can stay in bed");
-		}
-		// If it is not the weekend, tell them to get out of bed and go to school!
 		
+			JOptionPane.showMessageDialog(null, "you can stay in bed");
+		
+		
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "its time to get out bed and go to school");
+		}
+		
+		// If it is not the weekend, tell them to get out of bed and go to school!
 		
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;
 		// Write code to ask the user what percentage they scored in their last exam
 
-		
+		String input = JOptionPane.showInputDialog("what was your percentage score on your last exam|?");
+		Do you need help?
 		// If they scored more than 70, they passed the exam.
 		// Set the boolean passedExam based on their score.
 		
