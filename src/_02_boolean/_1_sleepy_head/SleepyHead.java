@@ -1,5 +1,7 @@
 package _02_boolean._1_sleepy_head;
 
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
@@ -14,13 +16,13 @@ public class SleepyHead {
 		// Write code to ask the user what day it is.
         String  day = JOptionPane.showInputDialog("what is today ?");
 		// Set the boolean isWeekend based on the value they enter
-		if (day.equals ("yes") ) {
+		if(day.equals ("Saturday") || day.equals ("Sunday")) {
 			isWeekend = true;
 			
 			
 			
 		}
-		if(day.equals("no")) {
+		else {
 			isWeekend = false;
 		}
 		
@@ -44,12 +46,15 @@ public class SleepyHead {
 		// Write code to ask the user what percentage they scored in their last exam
 
 		String input = JOptionPane.showInputDialog("what was your percentage score on your last exam|?");
-		Do you need help?
+		int number = Integer.parseInt(input);
+		if(number >= 70);
+		JOptionPane.showMessageDialog(null, "you past the exam");
 		// If they scored more than 70, they passed the exam.
 		// Set the boolean passedExam based on their score.
 		
 		// If the user passed the exam, congratulate them
-		
+		if(number < 70)
+			JOptionPane.showMessageDialog(null, "wish you a better luck next time");
 		// otherwise, wish them better luck next time.
 		
 		
@@ -73,8 +78,13 @@ public class SleepyHead {
 		
 		boolean isRed;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
-		
-		
+		String color = JOptionPane.showInputDialog("what color to draw width");
+		if(color.equals("red")) {
+			isRed = true;
+			drawRedSquare();
+
+		}
+					
 		boolean isSquare;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
 		
@@ -89,7 +99,15 @@ public class SleepyHead {
 
 	
 	static void drawRedSquare() {
+		
 		Robot rob = new Robot();
+		rob.setPenColor(Color.red);
+		for (int i = 0; i < 4; i++) {
+			rob.penDown();
+			rob.move(100);
+		rob.turn(90);
+		rob.setSpeed(300);
+		}
 		// Complete the rest of this method
 	}	
 }
