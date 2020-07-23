@@ -1,15 +1,17 @@
 package _03_char._2_string_methods;
 
+import javax.swing.JOptionPane;
 
 public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
+String charAt = JOptionPane.showInputDialog("");
 
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
 
-		
+		f
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
 
