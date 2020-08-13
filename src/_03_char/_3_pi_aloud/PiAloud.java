@@ -21,10 +21,13 @@ public class PiAloud {
 	// Check the console shows 3.1
 
 	// 4. Print ALL the digits of of the Pi String (hint: use a loop)
-
+for(int i=0; i<num.length(); i++ ) {
+	System.out.println(pi.charAt(0));	
+}
+	
 	// 5. Use the speak() method below to speak each digit of Pi.
-
 	// [CHALLENGE]
+	
 	// *6. Get a character from the user using the getInputFromUser() method
 	// *7. Compare the users' char to the next digit of Pi
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" 
@@ -55,5 +58,5 @@ public class PiAloud {
 	}
 
 }
-
+}
 
