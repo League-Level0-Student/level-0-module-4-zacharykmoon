@@ -27,8 +27,11 @@ for(int i=0; i<num.length(); i++) {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
-for(int i = 0; i<num.charAt(0; i++) {
-	
+for(int i = 0; i<num.length(); i++) {
+	if(num.charAt(i)== 'a') {
+		System.out.println(i);
+		
+	}
 }
 
 	}
